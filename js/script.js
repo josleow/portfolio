@@ -15,3 +15,17 @@ button.addEventListener("click", function () {
   }
 
 })
+
+const noteInput = document.getElementById("noteInput");
+const addNoteBtn = document.getElementById("addNoteBtn");
+const notesList = document.getElementById("notesList");
+
+addNoteBtn.addEventListener('click', function(){
+  const noteText = noteInput.value
+  if (noteText === "") return
+
+  const li = document.createElement("li")
+  li.textContent = noteText
+  notesList.appendChild(li)
+  noteInput.value = ""
+})
