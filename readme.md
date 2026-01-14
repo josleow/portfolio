@@ -33,3 +33,16 @@ by practicing **1.5 hour per day**.
 - Added a projects list section
 - Improved spacing for readability
 - Prepared project for GitHub updates
+
+## Project: Portfolio Starter
+A simple portfolio starter built with HTML, CSS, and JavaScript.
+
+### Features
+- Clean layout (CSS)
+- Projects section
+- Interactive status toggler (JavaScript)
+
+### Tech Stack
+- HTML
+- CSS
+- JavaScript
