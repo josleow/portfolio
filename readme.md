@@ -34,6 +34,25 @@ by practicing **1.5 hour per day**.
 - Improved spacing for readability
 - Prepared project for GitHub updates
 
+## Day 7
+- Restructured project folders into css / js / assets
+- Updated HTML paths for linked files
+- Practiced proper project organization and Git commits
+
+## Day 8
+- Built a Notes mini-app with input, button, and dynamic list rendering
+- Practiced creating and appending DOM elements using JavaScript
+
+## Day 9
+- Added LocalStorage to persist notes after page refresh
+- Implemented loading and saving of browser-stored data
+
+## Day 10
+- Enabled Enter key to add new notes
+- Implemented click-to-delete functionality for notes
+- Synced note updates with LocalStorage
+
+
 ## Project: Portfolio Starter
 A simple portfolio starter built with HTML, CSS, and JavaScript.
 

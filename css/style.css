@@ -76,4 +76,12 @@ body {
     border-radius: 4px;
   }
   
+  #notesList li {
+    cursor: pointer;
+  }
+  
+  #notesList li:hover {
+    opacity: 0.8;
+  }
+  
   
