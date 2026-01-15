@@ -84,4 +84,15 @@ body {
     opacity: 0.8;
   }
   
+  input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
   
+  section p {
+    color: #555;
+  }
+  
+  #addNoteBtn {
+    margin-left: 8px;
+  }
