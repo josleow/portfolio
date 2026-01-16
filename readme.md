@@ -78,3 +78,9 @@ A simple notes application built with vanilla JavaScript.
 - Documented Notes App as Project 1 in README (features + what I learned)
 - Added a project screenshot to assets and linked it in README
 - Committed and pushed updates to GitHub
+
+
+## Day 12
+- Set up local development environment
+- Verified Git, Node, and npm availability
+- Cloned portfolio repository on work laptop
