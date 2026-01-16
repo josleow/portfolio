@@ -19,6 +19,7 @@ A simple notes application built with vanilla JavaScript.
 - LocalStorage data persistence
 - State synchronization between UI and storage
 
+  
 ![Notes App Screenshot](assets/notes-app.png)
 
 
