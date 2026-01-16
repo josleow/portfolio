@@ -84,3 +84,9 @@ A simple notes application built with vanilla JavaScript.
 - Set up local development environment
 - Verified Git, Node, and npm availability
 - Cloned portfolio repository on work laptop
+
+## Day 13
+- Created my first React app using create-react-app
+- Successfully ran the React development server with npm start
+- Edited App.js to display custom content
+- Verified live reload updates in the browser
