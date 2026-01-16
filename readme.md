@@ -73,16 +73,8 @@ A simple notes application built with vanilla JavaScript.
 - Implemented click-to-delete functionality for notes
 - Synced note updates with LocalStorage
 
-
-## Project: Portfolio Starter
-A simple portfolio starter built with HTML, CSS, and JavaScript.
-
-### Features
-- Clean layout (CSS)
-- Projects section
-- Interactive status toggler (JavaScript)
-
-### Tech Stack
-- HTML
-- CSS
-- JavaScript
+## Day 11
+- Polished Notes App UI text for a more professional feel
+- Documented Notes App as Project 1 in README (features + what I learned)
+- Added a project screenshot to assets and linked it in README
+- Committed and pushed updates to GitHub
