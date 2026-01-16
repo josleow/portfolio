@@ -91,20 +91,4 @@ A simple notes application built with vanilla JavaScript.
 - Edited App.js to display custom content
 - Verified live reload updates in the browser
 
-## Day 14
-- Built working Notes App logic using React state (useState)
-- Added notes via button click and Enter key
-- Rendered notes list dynamically with map()
-- Implemented delete functionality per note
-
-## Day 15
-- Implemented LocalStorage persistence using useEffect
-- Loaded saved notes when app starts
-- Automatically saved notes when notes state changes
-- Fixed first-render overwrite bug using useRef to preserve stored notes
-
-## Day 16
-- Deployed React Notes App to Vercel
-- Generated live production URL
-- Linked live demo and GitHub repo in portfolio site
 
