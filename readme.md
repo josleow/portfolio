@@ -21,21 +21,6 @@ A simple notes application built with vanilla JavaScript.
 
 ![Notes App Screenshot](assets/notes-app.png)
 
-A lightweight notes app built with vanilla JavaScript. Notes persist after refresh using LocalStorage.
-
-### Features
-- Add notes (button or Enter key)
-- Delete notes by clicking
-- Notes persist after refresh (LocalStorage)
-
-### Built With
-- HTML
-- CSS
-- JavaScript
-
-### How to Run
-1. Download or clone this repo
-2. Open `index.html` in your browser
 
 
 ## Day 1
