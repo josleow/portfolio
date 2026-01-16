@@ -3,7 +3,22 @@
 This repository documents my journey to become a full-stack developer
 by practicing **1.5 hour per day**.
 
-## Project 1: Notes App (LocalStorage)
+## Project 1: Notes App (HTML, CSS, JavaScript)
+
+A simple notes application built with vanilla JavaScript.
+
+### Features
+- Add notes with button or Enter key
+- Delete notes by clicking
+- Persistent storage using LocalStorage
+- Responsive and clean UI
+
+### What I learned
+- DOM manipulation
+- Event handling
+- LocalStorage data persistence
+- State synchronization between UI and storage
+
 ![Notes App Screenshot](assets/notes-app.png)
 
 A lightweight notes app built with vanilla JavaScript. Notes persist after refresh using LocalStorage.
