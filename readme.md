@@ -24,8 +24,19 @@ Frontend
 |-----|--------|---------------|
 | Day 1–21 | React Learning | Completed React fundamentals & UI experiments → See Notes-React repo |
 | Day 22 | Backend Foundation | Built first Node.js + Express server |
-| Day 23 | API Routes | Create JSON API endpoints (in progress) |
-| Day 24 | Journey Page | Add learning log into portfolio |
+| Day 23 | API Routes | Created JSON API endpoint and modular Express routes |
+| Day 24 | Frontend ↔ Backend | Served portfolio via Express and fetched `/api/projects` to render projects |
+| Day 25 | Data Separation | Moved API data into separate data module for clean backend structure |
+| Day 26 | Dynamic Portfolio | Rendered projects and skills dynamically from backend APIs |
+| Day 27A | Contact Form API | Built contact form + POST `/api/contact` endpoint and tested end-to-end |
+| Day 27A+ | Contact UX Polish | Added status styling and disabled submit button while sending (better UX) |
+| Day 27B | Project Detail API | Added REST endpoint `/api/projects/:id` to fetch single project by ID |
+| Day 28A | File Storage | Saved contact form submissions into `messages/contacts.json` on the server |
+
+
+
+
+
 
 
 🔗 Learning Repository

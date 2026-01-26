@@ -96,3 +96,17 @@ body {
   #addNoteBtn {
     margin-left: 8px;
   }
+
+  #contactStatus {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.status-sending { color: #555; }
+.status-success { color: green; }
+.status-error   { color: red; }
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

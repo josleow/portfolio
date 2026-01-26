@@ -48,12 +48,36 @@
         <button id="addNoteBtn">Add</button>
         <ul id="notesList"></ul>
       </section>
-      
+      <section id="api-test">
+        <h2>Projects (from API)</h2>
+          <div id="projectsFromApi">Loading...</div>
+      </section>
+      <section id="skills-api">
+        <h2>Skills (from API)</h2>
+          <div id="skillsFromApi">Loading...</div>
+      </section>
+<section id="contact-api">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <br /><br />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <br /><br />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <br /><br />
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="contactStatus"></p>
+</section>
+
     </main>
 
     <footer>
       <p>© 2026 Jos</p>
     </footer>
+    <script src="./js/api.js"></script>
     <script src="./js/script.js"></script>
 
   </body>
