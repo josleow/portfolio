@@ -2,7 +2,7 @@ async function loadProjects() {
   const container = document.getElementById("projectsFromApi");
 
   try {
-    const res = await fetch("http://localhost:3002/api/projects");
+    const res = await fetch("api/projects");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const data = await res.json();
@@ -27,7 +27,7 @@ loadProjects();
 async function loadSkills() {
   const container = document.getElementById("skillsFromApi");
     try {
-        const res = await fetch("http://localhost:3002/api/skills");
+        const res = await fetch("/api/skills");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
         const data = await res.json();
@@ -64,7 +64,7 @@ form.addEventListener("submit", async (e) => {
     message: document.getElementById("message").value.trim(),
   }
   try{
-    const res = await fetch("http://localhost:3002/api/contact", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
