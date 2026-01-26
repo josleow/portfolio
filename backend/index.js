@@ -48,13 +48,17 @@ app.use(cors());
 
 const path = require("path");
 
-// serve portfolio folder
-app.use(express.static(path.join(__dirname, "..", "portfolio")));
+// repo root folder (one level above /backend)
+const FRONTEND_DIR = path.join(__dirname, "..");
 
-// default route -> portfolio index.html
+// serve static files (index.html, css/, js/, images/, etc.)
+app.use(express.static(FRONTEND_DIR));
+
+// homepage
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "portfolio", "index.html"));
+  res.sendFile(path.join(FRONTEND_DIR, "index.html"));
 });
+
 
 //Api route - projects
 app.use("/api/projects", projectsRoute);
