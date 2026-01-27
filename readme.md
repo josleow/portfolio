@@ -85,7 +85,7 @@ x-admin-key: YOUR_ADMIN_KEY
 
 ```json
 { "error": "Unauthorized" }
-
+```
 
 ## 🗄️ Database
 
@@ -102,9 +102,10 @@ Each record contains:
 
 ## ⚙️ Environment Variables
 Backend requires:
-
+```
 MONGODB_URI=your_mongodb_atlas_connection_string
 ADMIN_KEY=your_private_admin_key
+```
 
 Set these:
 - Locally in backend/.env
@@ -118,7 +119,7 @@ Render Web Service configuration:
 Root Directory: backend
 Build Command: npm install
 Start Command: npm start
-
+```
 
 Frontend is served from repository root through Express static hosting.
 
