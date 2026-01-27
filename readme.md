@@ -74,10 +74,12 @@ https://portfolio-mj5e.onrender.com
 
 This project includes a protected admin endpoint to view contact form submissions.
 
-**Endpoint**
+**Endpoint**:
+
 GET /api/messages
 
-**Header Required**
+**Header Required**:
+
 x-admin-key: YOUR_ADMIN_KEY
 
 
