@@ -1,35 +1,42 @@
-🌐 Josephine Leow — Full-Stack Portfolio
-🧭 Project Overview
+# 🌐 Josephine Leow — Full-Stack Portfolio
 
-Full-Stack Portfolio Application
+## 🧭 Project Overview
+
+**Full-Stack Portfolio Application**
 
 Designed and developed a full-stack web application featuring a Node.js and Express backend with MongoDB Atlas database integration. Implemented RESTful APIs to dynamically serve portfolio content and process contact form submissions with persistent cloud storage. Deployed the application on Render with environment-based configuration, modular route architecture, and protected admin endpoints, demonstrating end-to-end full-stack development and production deployment workflows.
 
+---
 
-# 🎯 Purpose
-- Showcase completed projects
-- Demonstrate full-stack development skills
-- Document continuous learning progress
-- Provide recruiters a clear view of technical capabilities
+## 🎯 Purpose
 
-# 🛠️ Tech Stack
+- Showcase completed development projects  
+- Demonstrate full-stack engineering skills  
+- Document continuous learning progress  
+- Provide recruiters a clear view of technical capabilities  
 
-Frontend
-- HTML, CSS, JavaScript
-- React
+---
 
-Backend
-- Node.js
-- Express.js
+## 🛠️ Tech Stack
 
-Database
-- MongoDB Atlas
+### Frontend
+- HTML, CSS, JavaScript  
+- React  
 
-Deployment
-- Render (Full-stack hosting)
+### Backend
+- Node.js  
+- Express.js  
+
+### Database
+- MongoDB Atlas  
+
+### Deployment
+- Render (Full-stack hosting)  
 - GitHub (Version control)
 
-# Full-stack journey log
+---
+
+## 🗓️ Full-Stack Journey Log
 
 | Day | Focus | Key Work Done |
 |-----|--------|---------------|
@@ -47,13 +54,14 @@ Deployment
 | Day 28C | MongoDB Integration | Connected Express app to MongoDB Atlas; saved and retrieved messages |
 | Day 29 | Admin Security & Docs | Secured admin routes and completed documentation |
 
-# 🚀 Live Demo
+## 🚀 Live Demo
 
 Deployed Application:
 https://portfolio-mj5e.onrender.com
 
 
-🚀 API Endpoints
+## API Endpoints
+
 | Method | Endpoint          | Description               |
 | ------ | ----------------- | ------------------------- |
 | GET    | /api/projects     | List portfolio projects   |
@@ -62,19 +70,17 @@ https://portfolio-mj5e.onrender.com
 | POST   | /api/contact      | Submit contact form       |
 | GET    | /api/messages     | Admin-only message viewer |
 
-# 🔐 Admin Endpoint
+## 🔐 Admin Endpoint
 
-To protect stored contact messages, an admin-only API route is implemented.
+This project includes a protected admin endpoint to view contact form submissions.
 
-Endpoint
+**Endpoint**
+GET /api/messages
 
-```GET /api/messages
+**Header Required**
+x-admin-key: YOUR_ADMIN_KEY
 
-Header Required
-
-```x-admin-key: YOUR_ADMIN_KEY
-
-Unauthorized requests return:
+**Unauthorized Response**
 
 ```{ "error": "Unauthorized" }
 
@@ -95,19 +101,23 @@ timestamps
 # ⚙️ Environment Variables
 Backend requires:
 
-```MONGODB_URI=your_mongodb_atlas_connection_string
-ADMIN_KEY=your_private_admin_key```
+```bash
+MONGODB_URI=your_mongodb_atlas_connection_string
+ADMIN_KEY=your_private_admin_key
 
 Set these:
 - Locally in backend/.env
 - In Render → Environment settings
 
-# 🌍 Deployment (Render)
+## 🌍 Deployment (Render)
 
 Render Web Service configuration:
-`Root Directory: backend`
-`Build Command: npm install`
-`Start Command: npm start`
+
+```bash
+Root Directory: backend
+Build Command: npm install
+Start Command: npm start
+
 
 Frontend is served from repository root through Express static hosting.
 
