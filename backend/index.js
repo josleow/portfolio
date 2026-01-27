@@ -12,15 +12,14 @@ mongoose
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
-function requireAdminKey(req, res, next) {
-  const adminKey = req.header["x-admin-key"]; 
-    if (!process.env.ADMIN_KEY) {
-        return res.status(500).json({ error: "Admin key not configured on server" });
-    }
-    if (adminKey !== process.env.ADMIN_KEY) {
-        return res.status(403).json({ error: "Forbidden: Invalid admin key" });
-    }
-    next();
+function requireAdmin(req, res, next) {
+  const key = (req.header("x-admin-key") || "").trim();
+  const expected = (process.env.ADMIN_KEY || "").trim();
+
+  if (!expected) return res.status(500).json({ error: "ADMIN_KEY not configured" });
+  if (key !== expected) return res.status(403).json({ error: "Forbidden: Invalid admin key" });
+
+  next();
 }
 
 //allow JSON
