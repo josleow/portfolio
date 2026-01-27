@@ -31,6 +31,8 @@ Frontend
 | Day 27A | Contact Form API | Built contact form + POST `/api/contact` endpoint and tested end-to-end |
 | Day 27A+ | Contact UX Polish | Added status styling and disabled submit button while sending (better UX) |
 | Day 27B | Project Detail API | Added REST endpoint `/api/projects/:id` to fetch single project by ID |
+| Day 27C | Deployment (Render) | Deployed full-stack app to Render; frontend and APIs working in production |
+| Day 27C+ | Prod Fix | Updated frontend to use relative API paths so projects/skills load on Render |
 | Day 28A | File Storage | Saved contact form submissions into `messages/contacts.json` on the server |
 
 
