@@ -43,7 +43,11 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-app.get("/api/messages", requireAdminKey, async (req, res) => {
+app.get("/api/version", (req, res) => {
+  res.json({ version: "v-adminkey-1" });
+});
+
+app.get("/api/messages", requireAdmin, async (req, res) => {
   try {
     const msgs = await ContactMessage.find().sort({ createdAt: -1 }).limit(20);
     res.json(msgs);
