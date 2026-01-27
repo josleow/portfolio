@@ -80,28 +80,29 @@ GET /api/messages
 **Header Required**
 x-admin-key: YOUR_ADMIN_KEY
 
+
 **Unauthorized Response**
 
-```{ "error": "Unauthorized" }
+```json
+{ "error": "Unauthorized" }
 
-# 🗄️ Database
+
+## 🗄️ Database
 
 MongoDB Atlas is used to store contact form submissions.
 
 Collection
-
-```contactmessages
+contactmessages
 
 Each record contains:
-name
-email
-message
-timestamps
+- name
+- email
+- message
+- timestamps
 
-# ⚙️ Environment Variables
+## ⚙️ Environment Variables
 Backend requires:
 
-```bash
 MONGODB_URI=your_mongodb_atlas_connection_string
 ADMIN_KEY=your_private_admin_key
 
@@ -121,18 +122,18 @@ Start Command: npm start
 
 Frontend is served from repository root through Express static hosting.
 
-# 💼 Resume Project Highlights
+## 💼 Resume Project Highlights
 
 - Built and deployed a full-stack portfolio application using Node.js, Express, and MongoDB Atlas with REST API architecture.
 - Implemented dynamic frontend integration consuming live backend APIs for projects, skills, and contact workflows.
 - Developed secure POST contact system with database persistence and protected admin-only message endpoint.
 - Deployed production full-stack application on Render with environment-based configuration.
 
-# 🔗 Learning Repository
+## 🔗 Learning Repository
 
 React Learning & Experiments:
 Notes-React Repo:
 https://github.com/josleow/notes-react
 
-# 📩 Contact
+## 📩 Contact
 GitHub: https://github.com/josleow
