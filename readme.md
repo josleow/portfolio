@@ -92,7 +92,9 @@ x-admin-key: YOUR_ADMIN_KEY
 MongoDB Atlas is used to store contact form submissions.
 
 Collection
+```nginx
 contactmessages
+```
 
 Each record contains:
 - name
@@ -102,7 +104,7 @@ Each record contains:
 
 ## ⚙️ Environment Variables
 Backend requires:
-```
+```ini
 MONGODB_URI=your_mongodb_atlas_connection_string
 ADMIN_KEY=your_private_admin_key
 ```
