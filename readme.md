@@ -34,6 +34,7 @@ Frontend
 | Day 27C | Deployment (Render) | Deployed full-stack app to Render; frontend and APIs working in production |
 | Day 27C+ | Prod Fix | Updated frontend to use relative API paths so projects/skills load on Render |
 | Day 28A | File Storage | Saved contact form submissions into `messages/contacts.json` on the server |
+| Day 28B | MongoDB Integration | Connected Express app to MongoDB Atlas, saved and retrieved contact messages from cloud database in production |
 
 
 

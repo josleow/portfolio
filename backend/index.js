@@ -12,7 +12,16 @@ mongoose
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
-
+function requireAdminKey(req, res, next) {
+  const adminKey = req.headers["x-admin-key"]; 
+    if (!process.env.ADMIN_KEY) {
+        return res.status(500).json({ error: "Admin key not configured on server" });
+    }
+    if (adminKey !== process.env.ADMIN_KEY) {
+        return res.status(403).json({ error: "Forbidden: Invalid admin key" });
+    }
+    next();
+}
 
 //allow JSON
 app.use(express.json())
@@ -35,7 +44,7 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-app.get("/api/messages", async (req, res) => {
+app.get("/api/messages", requireAdminKey, async (req, res) => {
   try {
     const msgs = await ContactMessage.find().sort({ createdAt: -1 }).limit(20);
     res.json(msgs);
