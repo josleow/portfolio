@@ -13,7 +13,7 @@ mongoose
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 function requireAdminKey(req, res, next) {
-  const adminKey = req.headers["x-admin-key"]; 
+  const adminKey = req.header["x-admin-key"]; 
     if (!process.env.ADMIN_KEY) {
         return res.status(500).json({ error: "Admin key not configured on server" });
     }
